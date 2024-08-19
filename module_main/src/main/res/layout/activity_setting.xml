@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="settingViewModel"
+            type="com.nudtit.module_main.viewmodel.SettingViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/common_setting_title_view"
+            android:titlemodel="@{settingViewModel.titleViewModel}" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:paddingBottom="20dp"
+                    android:text="@string/setting_slam_ware_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+                    <TextView
+                        android:id="@+id/tv_setting_max_speed"
+                        style="@style/public_text_S_style"
+                        android:text="@string/setting_max_speed"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_max_speed_value"
+                        style="@style/public_text_S_style"
+                        android:text="@{settingViewModel.obSpeedValue}"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toRightOf="@id/tv_setting_max_speed"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/tv_setting_max_speed_unit"
+                        style="@style/public_text_S_style"
+                        android:text="m/s"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toRightOf="@id/tv_setting_max_speed_value"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <SeekBar
+                        android:id="@+id/sb_tts_activity_setting_speed"
+                        style="@style/setting_seekBar_style"
+                        android:max="@{settingViewModel.obMaxSpeed}"
+                        android:progress="@{settingViewModel.obSpeedProgress}"
+                        android:setOnSeekBarChangeListener="@{settingViewModel.onSeekBarChangeListener}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+                    <TextView
+                        android:id="@+id/tv_setting_navigate_model"
+                        style="@style/public_text_S_style"
+                        android:text="@string/setting_navigate_model"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_navigate_free"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:checked="true"
+                            android:text="@string/setting_navigate_free" />
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_navigate_track"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_navigate_track" />
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_navigate_track_prior"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_navigate_track_prior" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+                    <TextView
+                        android:id="@+id/tv_setting_arrive_point_model"
+                        style="@style/public_text_S_style"
+                        android:text="@string/setting_arrive_point_model"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_arrive_point_model_exact"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_arrive_point_model_exact" />
+
+                        <RadioButton
+                            android:id="@+id/rb_arrive_point_model_common"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:checked="true"
+                            android:text="@string/setting_arrive_point_model_common" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+                    <TextView
+                        android:id="@+id/tv_setting_pause_continue_map"
+                        style="@style/public_text_S_style"
+                        android:text="@string/setting_pause_continue_map"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_pause_map"
+                            style="@style/setting_button_style"
+
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_pause_pause_map" />
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_continue_map"
+                            style="@style/setting_button_style"
+
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_continue_map" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+                    <TextView
+                        android:id="@+id/setting_pause_continue_orientation"
+                        style="@style/public_text_S_style"
+                        android:text="@string/setting_pause_continue_orientation"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_pause_orientation"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_pause_orientation"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_continue_orientation"
+                            style="@style/setting_button_style"
+                            android:OnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}"
+                            android:text="@string/setting_continue_orientation" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_diagnostic_debugging"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_common_right_arrow"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:onClick="@{() -> settingViewModel.onClickRunControl()}"
+                        android:text="@string/setting_motor_control"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_common_right_arrow"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View style="@style/view_base_setting_line" />
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:layout_marginTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/setting_display"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_radar"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_radar"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obRadar}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_virtual_wall"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_virtual_wall"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obVirtualWall}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_virtual_tracks"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_virtual_tracks"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obVirtualTracks}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_sensor_layer"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_sensor_layer"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obSensorLayer}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_cleaning_layer"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_cleaning_layer"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obCleaningLayer}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_wcs"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_wcs"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obWcs}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_target"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_target"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obTarget}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/setting_layout_style">
+
+
+                    <TextView
+                        style="@style/public_text_S_style"
+                        android:layout_width="match_parent"
+                        android:text="@string/setting_display_waypoint"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/switch_setting_waypoint"
+                        style="@style/setting_switch_style"
+                        app:checked="@{settingViewModel.obWayPoint}"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:setOnCheckedChangeListener="@{settingViewModel.onCheckedChangeListener}" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

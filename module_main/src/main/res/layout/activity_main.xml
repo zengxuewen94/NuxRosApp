@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.nudtit.module_main.viewmodel.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activity.MainActivity">
+
+
+        <include
+            layout="@layout/common_setting_title_view"
+            android:titlemodel="@{mainViewModel.titleViewModel}" />
+
+        <ImageView
+            android:id="@+id/iv_main_stop_action"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_circular_yellow"
+            android:onClick="@{()->mainViewModel.onClickStopAction()}"
+            app:layout_constraintBottom_toTopOf="@id/cb_main_navigate"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_main_stop_action"
+            style="@style/public_text_S_style"
+            android:text="@string/main_stop_action"
+            android:textColor="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="@id/iv_main_stop_action"
+            app:layout_constraintLeft_toLeftOf="@id/iv_main_stop_action"
+            app:layout_constraintRight_toRightOf="@id/iv_main_stop_action"
+            app:layout_constraintTop_toTopOf="@id/iv_main_stop_action" />
+
+        <CheckBox
+            android:id="@+id/cb_main_navigate"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_circular_yellow"
+            android:button="@null"
+            android:setOnCheckedChangeListener="@{mainViewModel.onCheckedChangeListener}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iv_main_navigate"
+            style="@style/public_text_S_style"
+
+            android:selected="@{mainViewModel.obNavigateSelected}"
+            android:text="@string/main_navigate"
+            android:textColor="@color/selector_yellow_white_color"
+            app:layout_constraintBottom_toBottomOf="@id/cb_main_navigate"
+            app:layout_constraintLeft_toLeftOf="@id/cb_main_navigate"
+            app:layout_constraintRight_toRightOf="@id/cb_main_navigate"
+            app:layout_constraintTop_toTopOf="@id/cb_main_navigate" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_main_bottom_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ll_main_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="@{()->mainViewModel.onClickMap()}"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_main_map"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_main_map" />
+
+                <TextView
+                    android:id="@+id/tv_main_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_function_map"
+                    android:textSize="@dimen/dimen_S"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_main_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="@{()->mainViewModel.onClickAction()}"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_main_action"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="false"
+                    android:src="@drawable/ic_main_control" />
+
+                <TextView
+                    android:id="@+id/tv_main_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_function_action"
+                    android:textSize="@dimen/dimen_S" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_main_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="@{()->mainViewModel.onClickEdit()}"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_main_edit"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="false"
+                    android:src="@drawable/ic_main_map_edit" />
+
+                <TextView
+                    android:id="@+id/tv_main_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_function_edit"
+                    android:textSize="@dimen/dimen_S"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

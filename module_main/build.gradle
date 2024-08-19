@@ -1,0 +1,19 @@
+apply from: '../module_versions.gradle'
+android {
+
+    defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId "com.nudtit.module_main"
+        }
+
+        versionCode 1
+        versionName "1.0"
+    }
+}
+dependencies {
+    implementation project(':control_common')
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="660dp"
+    android:layout_height="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/shape_dialog_gray_bg">
+
+    <TextView
+        android:id="@+id/tv_common_single_ui_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="这是一个没有标题的单个按钮弹窗"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/dimen_M" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_common_single_ui_dialog_confirm"
+        android:layout_width="130.5dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/selector_button_blue_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:text="@string/common_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_M" />
+</androidx.constraintlayout.widget.ConstraintLayout>

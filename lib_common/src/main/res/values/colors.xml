@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+    <!--白色40%-->
+    <color name="transparent_white">#96ffffff</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--黑色5-->
+    <color name="black5">#0D000000</color>
+    <!--黑色85-->
+    <color name="black85">#D9000000</color>
+    <!--透明色-->
+    <color name="transparent">#00ffffff</color>
+    <!--透明色-->
+    <color name="transparent1">#99000000</color>
+    <!--背景色-->
+    <color name="bg_color">@color/black</color>
+    <!--灰色-->
+    <color name="gray_color">#333333</color>
+    <!--弹窗背景颜色-->
+    <color name="dialog_bg_color">@color/white</color>
+    <!--弹窗背景颜色-->
+    <color name="dialog_bg_color_pressed">#181924</color>
+    <!--浅灰色-->
+    <color name="light_gray_color">#ffd6d7dc</color>
+    <!--地图背景色-->
+    <color name="map_bg_color">#D3D3D3</color>
+    <!--switch开关背景颜色-->
+    <color name="switch_bg_color">#686868</color>
+    <!--灰白色-->
+    <color name="gray_white_color">#B3B3B3</color>
+
+    <!--灰白色-->
+    <color name="transport_gray_white_color">#66686868</color>
+    <!--紫色-->
+    <color name="purple_color">#6B8AFF</color>
+    <!--紫色-->
+    <color name="light_purple_color">#EFF2FF</color>
+    <!--绿色-->
+    <color name="green_color">#60bc71</color>
+    <!--浅绿色-->
+    <color name="light_green_color">#caffd4</color>
+    <!--蓝色-->
+    <color name="blue_color">#03A2ED</color>
+    <color name="transport_blue_color">#9603A2ED</color>
+    <!--#0093FF  #03A2ED-->
+    <!--橘黄色-->
+    <color name="orange_color">#F4B184</color>
+    <!--红色-->
+    <color name="red_color">#E15F51</color>
+    <!--浅红色-->
+    <color name="light_red_color">#EA87C0</color>
+    <!--粉色-->
+    <color name="pink_color">#F14E7D</color>
+
+    <!--管理员主界面-->
+    <!--日期字体颜色-->
+    <color name="admin_main_date_color">#ff424244</color>
+    <!--蓝色-->
+    <color name="seek_bar_color">#8ADAFF</color>
+    <color name="seek_bar_bg_color">#D6D7DC</color>
+
+
+    <!--导航讲解设置界面-->
+    <!--主字体颜色-->
+    <color name="navigate_set_main_txt_color">#ff525878</color>
+    <!--浅蓝色-->
+    <color name="navigate_set_light_blue_color">#f6fbff</color>
+    <!--黄色-->
+    <color name="navigate_set_yellow_color">#ffd375</color>
+    <!--棕色-->
+    <color name="navigate_set_brown_color">#7d5a0f</color>
+    <!--棕色-->
+    <color name="navigate_set_file_selected_color">#5E5E5E</color>
+    <!--透明蓝色-->
+    <color name="navigate_set_transparent_blue_color">#80C8F5</color>
+    <color name="navigate_set_dialog_solid_color">#ff3d3f54</color>
+    <color name="navigate_set_dialog_stroke_color">#787B9E</color>
+    <color name="navigate_set_tour_update_solid_color">#FFF6ED</color>
+    <color name="navigate_set_tour_update_edit_solid_color">#FFFBF7</color>
+    <color name="navigate_set_tour_update_stroke_color">#FF9200</color>
+    <color name="navigate_move_dialog_point_color">#80AAFC</color>
+
+
+    <!--宣传配置界面-->
+    <color name="advert_blue_color">#7C9CBA</color>
+    <color name="voice_set_edit_color">#CA8223</color>
+
+    <!--迎宾接待-->
+    <color name="stroke_color">#FF4F20</color>
+    <color name="face_test_stroke_blue_color">#38A4FF</color>
+    <!--迎宾语设置-->
+    <color name="welcome_language_edit_color">#FAC798</color>
+    <color name="welcome_language_blue_color">#45A0E7</color>
+    <color name="welcome_language_light_blue_color">#F7FBFF</color>
+    <!--批量导入-->
+    <color name="user_import_yellow_color">#FFD263</color>
+    <color name="user_import_brown_color">#835900</color>
+
+    <!--地图管理-->
+    <!--地图设置-->
+    <color name="tab_layout_bg_color">#F7F8F9</color>
+    <color name="map_set_gray_color">#999999</color>
+    <color name="map_set_grey_color">#8B8E9E</color>
+    <color name="map_set_seek_bar_bg_color">#D6D7DC</color>
+    <color name="map_set_seek_bar_start_color">#30D8B5</color>
+    <color name="map_set_seek_bar_end_color">#49BEEA</color>
+    <color name="map_set_light_blue_color">#DEF3FF</color>
+
+    <!--高级设置-->
+    <!--密码修改-->
+    <color name="pwd_update_green_color">#30BF68</color>
+    <color name="pwd_update_light_green_color">#EAFFF1</color>
+    <color name="pwd_update_text_green_color">#B7ECCC</color>
+
+    <color name="tv_navigate_point_select_num_color">#D4F1FF</color>
+    <color name="tv_navigate_point_select_cancel_color">#fff25449</color>
+    <color name="tv_navigate_point_select_red_color">#ed5d3a</color>
+    <color name="tv_navigate_point_select_transparent_red_color">#66ed5d3a</color>
+    <color name="tv_navigate_point_select_green_color">#00C481</color>
+    <color name="tv_navigate_point_select_transparent_green_color">#6600C481</color>
+    <color name="tv_navigate_point_select_blue_color">#3079FF</color>
+    <color name="tv_navigate_point_select_transparent_blue_color">#663079FF</color>
+
+    <!--聊天界面背景颜色-->
+    <color name="chat_left_bg_color">#27272f</color>
+    <color name="chat_item_left_bg_color">#edf3fb</color>
+    <color name="chat_item_right_bg_color">#275DC1</color>
+
+    <!-- 分割线的颜色 -->
+    <color name="common_line_color">#ECECEC</color>
+</resources>

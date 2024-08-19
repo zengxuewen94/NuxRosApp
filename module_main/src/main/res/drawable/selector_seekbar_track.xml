@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--switch的自定义轨道-->
+<!--selector_switch_track.xml文件-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/seekbar_track_on"
+
+        android:height="15dp" android:gravity="center_vertical"
+        android:state_checked="true" />
+    <item android:drawable="@drawable/seekbar_track_off"
+        android:height="15dp" android:gravity="center_vertical"
+        android:state_checked="false" />
+</selector>

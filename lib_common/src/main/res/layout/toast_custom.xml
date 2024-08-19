@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/shape_common_toast_bg"
+    android:paddingTop="12dp"
+    android:paddingBottom="15dp">
+
+
+    <TextView
+        android:id="@+id/toast_custom_tv"
+        style="@style/public_text_S_style"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/switch_bg_color"
+        tools:text="登录成功" />
+
+
+</LinearLayout>

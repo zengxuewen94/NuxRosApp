@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: '../lib_versions.gradle'
+
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+    }
+
+}
+dependencies {
+    api project(':lib_common')
+    api 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+}

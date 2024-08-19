@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- 对话框默认主题 -->
+    <style name="BaseDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert"><!-- @android:style/Theme.Dialog -->
+        <!-- 无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 浮在 Activity 之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 遮盖层 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 动画效果 -->
+        <item name="android:windowEnterAnimation">@anim/scale_in_window</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_window</item>
+        <!-- Base.Theme.AppCompat.Light.Dialog.Alert 特有的属性，用于指定默认宽度，这里需要禁用 -->
+        <item name="android:windowMinWidthMajor">0dp</item>
+        <item name="android:windowMinWidthMinor">0dp</item>
+        <!-- 解决 ActionBar 占位导致 Dialog 无法全屏显示的问题 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- ActionMode 覆盖 Actionbar，不顶下来 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 不感知敏感的切换 -->
+        <!--<item name="android:configChanges">orientation|screenSize|keyboardHidden</item>-->
+        <!-- 默认隐藏输入法 -->
+        <!--<item name="android:windowSoftInputMode">stateHidden</item>-->
+        <!-- Dialog 全屏显示 -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <!-- 缩放动画 -->
+    <style name="ScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_in_window</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_window</item>
+    </style>
+
+    <!-- ios 动画 -->
+    <style name="IOSAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/android_in_window</item>
+        <item name="android:windowExitAnimation">@anim/android_out_window</item>
+    </style>
+
+    <!-- 顶部弹出动画 -->
+    <style name="TopAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/top_in_window</item>
+        <item name="android:windowExitAnimation">@anim/top_out_window</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="BottomAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in_window</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out_window</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="BottomIntoAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in_window</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_window</item>
+    </style>
+
+    <!-- 左边弹出动画 -->
+    <style name="LeftAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/left_in_window</item>
+        <item name="android:windowExitAnimation">@anim/left_out_window</item>
+    </style>
+
+    <!-- 右边弹出动画 -->
+    <style name="RightAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/right_in_window</item>
+        <item name="android:windowExitAnimation">@anim/right_out_window</item>
+    </style>
+
+
+    <!--设置界面线条 -->
+    <style name="view_base_setting_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/light_gray_color</item>
+    </style>
+
+    <!--设置界面text_view -->
+    <style name="text_base_setting_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/dimen_S</item>
+    </style>
+
+    <!--设置界面layout -->
+    <style name="layout_base_setting_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">146dp</item>
+        <item name="android:paddingEnd">45dp</item>
+        <item name="android:paddingStart">45dp</item>
+    </style>
+
+    <!--设置界面item_layout -->
+    <style name="layout_base_setting_item_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">146dp</item>
+    </style>
+
+    <style name="item_right_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_XS</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">45dp</item>
+    </style>
+
+    <style name="item_right_img">
+        <item name="android:layout_width">19dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:src">@mipmap/ic_common_right_arrow</item>
+    </style>
+
+    <style name="item_right_seekBar">
+        <item name="android:layout_width">424.5dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:progressDrawable">@drawable/layer_setting_sb_bg</item>
+        <item name="android:thumb">@drawable/shape_setting_sb_thump</item>
+        <item name="android:paddingEnd">20px</item>
+        <item name="android:paddingStart">20px</item>
+        <item name="android:maxHeight">17px</item>
+        <item name="android:minHeight">17px</item>
+        <item name="android:splitTrack">false</item>
+    </style>
+
+    <style name="voice_setting_seekBar">
+        <item name="android:layout_width">500px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:progressDrawable">@drawable/layer_setting_sb_bg</item>
+        <item name="android:thumb">@drawable/shape_setting_sb_thump</item>
+        <item name="android:paddingEnd">9px</item>
+        <item name="android:paddingStart">9px</item>
+        <item name="android:maxHeight">6px</item>
+        <item name="android:minHeight">6px</item>
+        <item name="android:paddingTop">7px</item>
+        <item name="android:paddingBottom">7px</item>
+        <item name="android:splitTrack">false</item>
+    </style>
+    <style name="switch_style" parent="Theme.AppCompat.Light">
+        <!--开启时的颜色-->
+        <item name="colorControlActivated">@color/pwd_update_green_color</item>
+        <!--关闭时的颜色-->
+        <item name="colorSwitchThumbNormal">#AEB0B9</item>
+        <!--关闭时的轨迹颜色-->
+        <item name="android:colorForeground">@color/seek_bar_bg_color</item>
+    </style>
+</resources>

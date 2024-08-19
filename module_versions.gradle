@@ -1,0 +1,72 @@
+/**
+ * 版本统一管理
+ */
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+android {
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    buildFeatures{
+        dataBinding = true
+    }
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 30
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        ndk {
+            abiFilters 'arm64-v8a','armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 支持 Java JDK 8
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                //集成开发模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+
+            }
+
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['assets', 'src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    //https://github.com/meituan/WMRouter 美团路由，用于替代阿里路由
+    //https://github.com/alibaba/ARouter/blob/master/README_CN.md
+    annotationProcessor 'com.alibaba:arouter-compiler:1.5.2'
+    annotationProcessor 'com.android.databinding:compiler:3.2.0-alpha10'
+}

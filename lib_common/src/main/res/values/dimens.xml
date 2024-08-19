@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 间距 -->
+    <dimen name="margin_common">30dp</dimen>
+    <dimen name="padding_common">30dp</dimen>
+
+
+
+
+    <!-- 字体大小 -->
+    <dimen name="dimen_XL">60dp</dimen>
+    <dimen name="dimen_L">48dp</dimen>
+    <dimen name="dimen_M">36dp</dimen>
+    <dimen name="dimen_S">34dp</dimen>
+    <dimen name="dimen_XS">24dp</dimen>
+
+    <dimen name="dialog_ui_round_size">15dp</dimen>
+    <integer name="dialog_progress_width_weight">3</integer>
+
+    <!-- 通用对话框圆角大小 -->
+    <integer name="dialog_width_weight">7</integer>
+</resources>

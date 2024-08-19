@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="robotInfoViewModel"
+            type="com.nudtit.module_main.viewmodel.RobotInfoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/common_setting_title_view"
+            android:titlemodel="@{robotInfoViewModel.titleViewModel}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical">
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_sn"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_sn"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:text="@{robotInfoViewModel.obSn}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_firmware"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_firmware"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obFirmware}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_hardware"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_hardware"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obHardware}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_system"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_system"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obSystem}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_ip"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_ip"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obIp}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_positioning_quality"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_positioning_quality"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obPositioningQuality}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_battery_power"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_batteryPower"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obBatteryPower}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_charge_status"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_charge"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obChargeStatus}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_map_size"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_map_size"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obMapSize}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_robot_pose"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_robot_pose"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obRobotPose}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+
+            <LinearLayout style="@style/robot_info_layout_style">
+
+                <TextView
+                    style="@style/public_text_M_style"
+                    android:text="@string/robot_info_charging_pose"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_robot_info_charging_pose"
+                    style="@style/public_text_S_style"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{robotInfoViewModel.obChargingPose}"
+                    android:textColor="@color/gray_color" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_base_setting_line"
+                android:background="@color/gray_color" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lib_common</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+</resources>

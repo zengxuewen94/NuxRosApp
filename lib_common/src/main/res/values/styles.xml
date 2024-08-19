@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--公共文本样式 30px-->
+    <style name="public_text_XS_style" parent="public_text_view_white_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/gray_white_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_XS</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="public_text_S_style" parent="public_text_view_white_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/gray_white_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_S</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="public_text_M_style" parent="public_text_view_white_style">
+        <item name="android:textSize">@dimen/dimen_M</item>
+
+    </style>
+
+    <style name="public_text_L_style" parent="public_text_view_white_style">
+        <item name="android:textSize">@dimen/dimen_L</item>
+    </style>
+
+    <!--公共文本样式 字体颜色白色-->
+    <style name="public_text_view_white_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--textview跑马灯效果-->
+    <style name="marquee_text_view">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:marqueeRepeatLimit">-1</item>
+    </style>
+</resources>

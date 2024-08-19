@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="titlemodel"
+            type="com.nudtit.control_common.widget.TitleViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="90dp"
+        android:paddingBottom="15dp"
+        android:background="@{titlemodel.layoutBg}">
+
+        <ImageView
+            android:id="@+id/iv_view_setting_back"
+            android:layout_width="65dp"
+            android:layout_marginStart="35dp"
+            android:layout_height="65dp"
+            android:background="@{titlemodel.leftBackBackground}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="@{titlemodel.onClickListener}" />
+
+
+        <TextView
+            android:id="@+id/tv_view_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@{titlemodel.textColor}"
+            android:textSize="@dimen/dimen_M"
+            android:text="@{titlemodel.title}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_view_setting_right"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:includeFontPadding="false"
+            android:layout_marginEnd="40dp"
+            android:textColor="@{titlemodel.textColor}"
+            android:textSize="@dimen/dimen_S"
+            android:text="@{titlemodel.rightTitle}"
+            android:gravity="center"
+            android:background="@{titlemodel.rightTvBackground}"
+            android:onClick="@{titlemodel.onClickListener}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_view_setting_right"
+            android:layout_width="65dp"
+            android:layout_marginEnd="35dp"
+            android:layout_height="65dp"
+            android:background="@{titlemodel.rightIvBackground}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="@{titlemodel.onClickListener}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
