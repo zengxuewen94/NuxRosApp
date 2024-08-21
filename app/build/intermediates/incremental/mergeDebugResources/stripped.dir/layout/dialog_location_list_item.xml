@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:background="@drawable/selector_white_blue_color">
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv_location_list_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintRight_toLeftOf="@id/btn_location_list_item_delete"
+        android:textColor="@color/selector_blue_white_color"
+        android:textSize="@dimen/dimen_XS" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btn_location_style"
+        android:id="@+id/btn_location_list_item_delete"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/selector_blue_white_color"
+        android:layout_centerVertical="true"
+        android:text="删除"
+        android:textSize="@dimen/dimen_XS" />
+</androidx.constraintlayout.widget.ConstraintLayout>

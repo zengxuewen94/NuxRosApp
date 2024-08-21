@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><!--switch的自定义圆钮-->
-<!--selector_switch_thumb.xml文件-->
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/thumb_on" android:state_checked="true" />
-    <item android:drawable="@drawable/thumb_off" android:state_checked="false" />
-</selector>

@@ -2,10 +2,13 @@ package com.nudtit.lib_common.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
+import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
+import android.graphics.drawable.Drawable;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -33,9 +36,7 @@ public class BitmapUtil {
         int width = srcBitmap.getWidth();
         int height = srcBitmap.getHeight();
         Matrix matrix = new Matrix();
-        //左右镜像matrix.postScale(-1, 1);
-        //matrix.postScale(-1, 1);
-        matrix.postScale(1, 1);
+        matrix.postScale(-1, 1);
         // 旋转角度
         matrix.postRotate(degrees);
         return Bitmap.createBitmap(srcBitmap, 0, 0, width, height, matrix, true);
@@ -102,4 +103,24 @@ public class BitmapUtil {
         retBitmap = BitmapFactory.decodeByteArray(rawImage, 0, rawImage.length, options);
         return retBitmap;
     }
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        //声明将要创建的bitmap
+        Bitmap bitmap = null;
+        //获取图片宽度
+        int width = 80;
+        //获取图片高度
+        int height = 80;
+        //图片位深，PixelFormat.OPAQUE代表没有透明度，RGB_565就是没有透明度的位深，否则就用ARGB_8888。详细见下面图片编码知识。
+        Bitmap.Config config = drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
+        //创建一个空的Bitmap
+        bitmap = Bitmap.createBitmap(width, height, config);
+        //在bitmap上创建一个画布
+        Canvas canvas = new Canvas(bitmap);
+        //设置画布的范围
+        drawable.setBounds(0, 0, width, height);
+        //将drawable绘制在canvas上
+        drawable.draw(canvas);
+        return bitmap;
+    }
+
 }

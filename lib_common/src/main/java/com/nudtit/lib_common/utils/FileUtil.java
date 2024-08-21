@@ -162,23 +162,12 @@ public class FileUtil {
      * @return 文件夹路径,
      */
     public static String getFilePath(String fileName) {
-        String filePath = getSDRootFile().concat(File.separator)
-                .concat(FileName.APP_FILE_NAME).concat(File.separator).concat(fileName);
+        String filePath = getSDRootFile().concat(File.separator).concat(fileName);
         makeDir(filePath);
         return filePath;
         //return context.getExternalFilesDir(filePath).getAbsolutePath();
     }
 
-
-    /**
-     * @param filePath 文件夹名称（不存在就新建）
-     * @return 文件夹路径,
-     */
-    public static String createFilePath(String filePath) {
-        makeDir(filePath);
-        return filePath;
-        //return context.getExternalFilesDir(filePath).getAbsolutePath();
-    }
 
     /**
      * 删除文件
@@ -224,97 +213,14 @@ public class FileUtil {
             return null;
         }
         List<String> s = new ArrayList<>();
-        for (File value : files) {
-            s.add(value.getAbsolutePath());
+        for (int i = 0; i < files.length; i++) {
+            s.add(files[i].getAbsolutePath());
         }
         return s;
     }
 
-    /**
-     * 删除文件（文件及文件夹）
-     * @param fileDir
-     * @return
-     */
-    public static boolean deleteFiles(String fileDir) {
-        try {
-            File file = new File(fileDir);
-            if (!file.exists()) {
-                return true;
-            }
-            if (file.isFile()) {//判断是否为文件，是，则删除
-                return file.delete();
-            } else {//不为文件，则为文件夹
-                String[] childFilePath = file.list();//获取文件夹下所有文件相对路径
-                for (String path : childFilePath) {
-                    File childFile = new File(file.getAbsoluteFile() + "/" + path);
-                    deleteFiles(childFile.getPath());//递归，对每个都进行判断
-                }
-                return file.delete();
-            }
-        } catch (Exception e) {
-            return false;
-        }
 
-    }
-    public static class FileName {
 
-        public static final String APP_FILE_NAME = "nudtit";
-
-        /**
-         * 语音合成临时文件夹
-         */
-        public static final String TTS = "tts";
-
-        /**
-         * 广告
-         */
-        public static final String ADVERT = "advert";
-
-        /**
-         * 广告-本地资源
-         */
-        public static final String ADVERT_LOCAL = ADVERT + "/local";
-
-        /**
-         * 广告-网络资源
-         */
-        public static final String ADVERT_NET = ADVERT + "/net";
-
-        /**
-         * 拍照保存的图片目录
-         */
-        public static final String IMAGE = "image";
-
-        /**
-         * word文档
-         */
-        public static final String WORD = "word";
-
-        /**
-         * 图片
-         */
-        public static final String PICTURE = "picture";
-
-        /**
-         * 音频
-         */
-        public static final String VIDEO = "video";
-
-        /**
-         * 音频
-         */
-        public static final String AUDIO = "audio";
-
-        /**
-         * 版本更新
-         */
-        public static final String UPDATE_APK = "update";
-
-        /**
-         * 地图
-         */
-        public static final String MAP = "map/";
-    }
 
 
 }

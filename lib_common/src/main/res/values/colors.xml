@@ -24,7 +24,7 @@
     <!--灰色-->
     <color name="gray_color">#333333</color>
     <!--弹窗背景颜色-->
-    <color name="dialog_bg_color">@color/white</color>
+    <color name="dialog_bg_color">#ffffff</color>
     <!--弹窗背景颜色-->
     <color name="dialog_bg_color_pressed">#181924</color>
     <!--浅灰色-->
@@ -35,9 +35,6 @@
     <color name="switch_bg_color">#686868</color>
     <!--灰白色-->
     <color name="gray_white_color">#B3B3B3</color>
-
-    <!--灰白色-->
-    <color name="transport_gray_white_color">#66686868</color>
     <!--紫色-->
     <color name="purple_color">#6B8AFF</color>
     <!--紫色-->
@@ -48,8 +45,6 @@
     <color name="light_green_color">#caffd4</color>
     <!--蓝色-->
     <color name="blue_color">#03A2ED</color>
-    <color name="transport_blue_color">#9603A2ED</color>
-    <!--#0093FF  #03A2ED-->
     <!--橘黄色-->
     <color name="orange_color">#F4B184</color>
     <!--红色-->

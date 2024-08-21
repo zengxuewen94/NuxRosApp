@@ -2,6 +2,7 @@ package com.nudtit.lib_common.utils;
 
 
 import android.text.TextUtils;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -104,6 +105,24 @@ public class TimeUtils {
         dateStr = year + "年" + month + "月" + day + "日";
         return dateStr;
     }
+
+
+
+    /**
+     * 获取时间 小时:分;秒 HH:mm:ss
+     *
+     * @return
+     */
+    public static String getCurrentTime2() {
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
+        String dateString = formatter.format(date);
+        return dateString;
+    }
+
+
+
+
 
     /**
      * 获取时间 小时:分;秒 HH:mm:ss

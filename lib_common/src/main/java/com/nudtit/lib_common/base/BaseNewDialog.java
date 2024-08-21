@@ -8,12 +8,10 @@ import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -47,7 +45,6 @@ import com.nudtit.lib_common.base.action.ClickAction;
 import com.nudtit.lib_common.base.action.HandlerAction;
 import com.nudtit.lib_common.base.action.KeyboardAction;
 import com.nudtit.lib_common.base.action.ResourcesAction;
-import com.nudtit.lib_common.utils.LogUtils;
 
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;
@@ -61,7 +58,7 @@ import java.util.List;
 public class BaseNewDialog extends AppCompatDialog implements LifecycleOwner,
         ActivityAction, ResourcesAction, HandlerAction, ClickAction, AnimAction, KeyboardAction,
         DialogInterface.OnShowListener, DialogInterface.OnCancelListener, DialogInterface.OnDismissListener {
-    private final static String TAG = BaseNewDialog.class.getSimpleName();
+
     private final ListenersWrapper<BaseNewDialog> mListeners = new ListenersWrapper<>(this);
     private final LifecycleRegistry mLifecycle = new LifecycleRegistry(this);
 
@@ -75,15 +72,6 @@ public class BaseNewDialog extends AppCompatDialog implements LifecycleOwner,
 
     public BaseNewDialog(Context context, @StyleRes int themeResId) {
         super(context, themeResId);
-    }
-
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
-            LogUtils.d("Module", "dispatchTouchEvent");
-        }
-
-        return super.dispatchTouchEvent(ev);
     }
 
     /**
@@ -220,7 +208,6 @@ public class BaseNewDialog extends AppCompatDialog implements LifecycleOwner,
         if (focusView != null) {
             getSystemService(InputMethodManager.class).hideSoftInputFromWindow(focusView.getWindowToken(), 0);
         }
-        LogUtils.d(TAG,"base dialog is dismiss");
         super.dismiss();
     }
 
@@ -443,7 +430,6 @@ public class BaseNewDialog extends AppCompatDialog implements LifecycleOwner,
     protected void onStart() {
         super.onStart();
         mLifecycle.handleLifecycleEvent(Lifecycle.Event.ON_START);
-        LogUtils.d(TAG, "Base dialog is onStart()");
     }
 
     @Override

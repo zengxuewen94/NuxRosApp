@@ -1,0 +1,185 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:2:1-89:12
+	package
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:4:5-36
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:8:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:13:5-15:47
+	tools:ignore
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:14:9-57
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:18:5-82
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:18:22-79
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:19:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:22:5-24:47
+	tools:ignore
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:23:9-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:27:5-80
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:27:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:28:5-71
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:28:22-68
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:31:5-78
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:31:22-75
+uses-feature#android.hardware.camera
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:34:5-60
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:34:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:35:5-70
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:35:19-67
+uses-feature#android.hardware.camera2.full
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:36:5-66
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:36:19-63
+uses-permission#android.permission.CAMERA
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:38:5-65
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:38:22-62
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:41:5-68
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:41:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:44:5-75
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:44:22-72
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:47:5-86
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:47:22-83
+uses-permission#android.permission.FLASHLIGHT
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:50:5-69
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:50:22-66
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:53:5-81
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:53:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:56:5-66
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:56:22-63
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:59:5-72
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:59:22-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:62:5-68
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:62:22-65
+uses-permission#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:65:5-87
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:65:22-84
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:68:5-85
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:68:22-82
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES=
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:70:5-83
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:70:22-81
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:72:5-79
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:72:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:73:5-81
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:73:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:74:5-85
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:74:22-82
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:75:5-84
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:75:22-81
+uses-permission#android.permission.SEND_SMS
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:77:5-67
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:77:22-64
+uses-permission#android.hardware.usb.host
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:78:5-80:36
+	android:required
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:80:9-33
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:79:9-49
+uses-feature#android.hardware.usb.host
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:82:5-84:35
+	android:required
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:84:9-32
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:83:9-49
+application
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:85:5-88:19
+service#org.eclipse.paho.android.service.MqttService
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:86:9-80
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:86:18-77
+service#com.nudtit.lib_common.mqtt.service.MqttService
+ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:87:9-60
+	android:name
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml:87:18-58
+uses-sdk
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+		ADDED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml
+		INJECTED from E:\source code\WebBot\lib_common\src\main\AndroidManifest.xml

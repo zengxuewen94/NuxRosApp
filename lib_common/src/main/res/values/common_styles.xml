@@ -58,12 +58,6 @@
         <item name="android:windowExitAnimation">@anim/bottom_out_window</item>
     </style>
 
-    <!-- 底部弹出动画 -->
-    <style name="BottomIntoAnimStyle" parent="android:Animation">
-        <item name="android:windowEnterAnimation">@anim/bottom_in_window</item>
-        <item name="android:windowExitAnimation">@anim/scale_out_window</item>
-    </style>
-
     <!-- 左边弹出动画 -->
     <style name="LeftAnimStyle" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/left_in_window</item>
@@ -120,44 +114,8 @@
         <item name="android:layout_marginRight">45dp</item>
     </style>
 
-    <style name="item_right_img">
-        <item name="android:layout_width">19dp</item>
-        <item name="android:layout_height">36dp</item>
-        <item name="layout_constraintRight_toRightOf">parent</item>
-        <item name="layout_constraintTop_toTopOf">parent</item>
-        <item name="layout_constraintBottom_toBottomOf">parent</item>
-        <item name="android:src">@mipmap/ic_common_right_arrow</item>
-    </style>
 
-    <style name="item_right_seekBar">
-        <item name="android:layout_width">424.5dp</item>
-        <item name="android:layout_height">70dp</item>
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:progressDrawable">@drawable/layer_setting_sb_bg</item>
-        <item name="android:thumb">@drawable/shape_setting_sb_thump</item>
-        <item name="android:paddingEnd">20px</item>
-        <item name="android:paddingStart">20px</item>
-        <item name="android:maxHeight">17px</item>
-        <item name="android:minHeight">17px</item>
-        <item name="android:splitTrack">false</item>
-    </style>
 
-    <style name="voice_setting_seekBar">
-        <item name="android:layout_width">500px</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:progressDrawable">@drawable/layer_setting_sb_bg</item>
-        <item name="android:thumb">@drawable/shape_setting_sb_thump</item>
-        <item name="android:paddingEnd">9px</item>
-        <item name="android:paddingStart">9px</item>
-        <item name="android:maxHeight">6px</item>
-        <item name="android:minHeight">6px</item>
-        <item name="android:paddingTop">7px</item>
-        <item name="android:paddingBottom">7px</item>
-        <item name="android:splitTrack">false</item>
-    </style>
     <style name="switch_style" parent="Theme.AppCompat.Light">
         <!--开启时的颜色-->
         <item name="colorControlActivated">@color/pwd_update_green_color</item>

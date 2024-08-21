@@ -3,7 +3,6 @@ package com.nudtit.lib_common.base;
 import android.app.Application;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.nudtit.lib_common.BuildConfig;
@@ -11,8 +10,8 @@ import com.nudtit.lib_common.manager.ActivityManager;
 import com.nudtit.lib_common.utils.GlideUtil;
 import com.nudtit.lib_common.utils.Utils;
 import com.tencent.bugly.crashreport.CrashReport;
-
-import me.jessyan.autosize.AutoSize;
+//
+//import me.jessyan.autosize.AutoSize;
 
 /**
  * 要想使用ModuleBaseApplication，必须在组件中实现自己的Application，并且继承ModuleBaseApplication；
@@ -38,9 +37,9 @@ public class ModuleBaseApplication extends Application {
         instance = this;
         Utils.init(this);
         initSdk();
-        initCrashReport();
-    }
+        //initCrashReport();
 
+    }
 
 
 
@@ -53,7 +52,7 @@ public class ModuleBaseApplication extends Application {
         // 初始化阿里路由
         initARouter();
         GlideUtil.setGlideBuilder();
-        AutoSize.initCompatMultiProcess(this);
+        //AutoSize.initCompatMultiProcess(this);
     }
 
 
@@ -81,7 +80,6 @@ public class ModuleBaseApplication extends Application {
                     // try-catch主线程的所有异常；Looper.loop()内部是一个死循环，出现异常时才会退出，所以这里使用while(true)
                     Looper.loop();
                 } catch (Throwable e) {
-                    Log.e("Error", "initCrashReport: "+e.getMessage());
                     // 上传错误日志
                     CrashReport.postCatchedException(e);
                     onError();
@@ -90,7 +88,6 @@ public class ModuleBaseApplication extends Application {
         });
         // try-catch子线程的所有异常
         Thread.setDefaultUncaughtExceptionHandler((t, e) -> {
-            Log.e("Error", "initCrashReport: "+e.getMessage());
             // 上传错误日志
             CrashReport.postCatchedException(e);
             onError();

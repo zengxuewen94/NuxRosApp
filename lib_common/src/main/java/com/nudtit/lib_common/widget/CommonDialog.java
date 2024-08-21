@@ -40,7 +40,7 @@ public final class CommonDialog {
             setContentView(R.layout.common_ui_dialog);
             setAnimStyle(BaseNewDialog.ANIM_IOS);
             setGravity(Gravity.CENTER);
-            setYoffset(-600);
+
             mContainerLayout = findViewById(R.id.ll_ui_content);
             mTitleView = findViewById(R.id.tv_ui_title);
             mCancelView = findViewById(R.id.tv_ui_cancel);

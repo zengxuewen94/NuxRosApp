@@ -17,13 +17,8 @@
     <style name="public_layout_no_bg_style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:paddingBottom">50dp</item>
-        <item name="android:paddingTop">60dp</item>
-        <item name="android:paddingStart">35dp</item>
-        <item name="android:paddingEnd">35dp</item>
-        <item name="layout_constraintTop_toTopOf">parent</item>
         <item name="layout_constraintWidth_percent">1</item>
-        <item name="layout_constraintHeight_percent">0.5</item>
+        <item name="layout_constraintHeight_percent">0.36</item>
     </style>
     <!--公共文本样式 用于灰色的提示性文字-->
     <style name="common_text_button_style">
@@ -35,6 +30,4 @@
         <item name="android:textSize">@dimen/dimen_S</item>
         <item name="android:includeFontPadding">false</item>
     </style>
-
-
 </resources>

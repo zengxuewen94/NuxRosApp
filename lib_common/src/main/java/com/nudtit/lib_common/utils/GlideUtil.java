@@ -10,7 +10,6 @@ import com.bumptech.glide.GlideBuilder;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool;
 import com.bumptech.glide.load.engine.cache.LruResourceCache;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.nudtit.lib_common.manager.ThreadPoolManager;
 
@@ -38,26 +37,11 @@ public class GlideUtil {
      * @param imgUrl
      */
     public static void loadImg(Context context, ImageView imageView, String imgUrl) {
-        Glide.with(context).load(imgUrl)
-//                .dontAnimate()
+        Glide.with(context).load(new File(imgUrl))
+                .dontAnimate()
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 // 避免刷新闪烁的问题
                 .skipMemoryCache(false)
-                .into(imageView);
-    }
-
-    /**
-     * 加载圆角图片
-     * @param context
-     * @param imageView
-     * @param imgUrl
-     */
-    public static void loadRadiusImg(Context context, ImageView imageView, String imgUrl){
-        RoundedCorners roundedCorners = new RoundedCorners(10);
-        RequestOptions options = RequestOptions.bitmapTransform(roundedCorners);
-        Glide.with(context)
-                .load(imgUrl)
-                .apply(options)
                 .into(imageView);
     }
 

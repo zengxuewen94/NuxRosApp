@@ -1,9 +1,10 @@
 package com.nudtit.lib_common.utils;
 
-import java.math.BigDecimal;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+
+import static java.lang.String.format;
 
 /**
  * 字符串相关工具类
@@ -260,20 +261,17 @@ public class StringUtils {
         return phoneNumber;
     }
 
-    public static int getInt(double number){
-        BigDecimal bd=new BigDecimal(number).setScale(0, BigDecimal.ROUND_HALF_UP);
-        return Integer.parseInt(bd.toString());
+    /**
+     * 保留两位小数
+     * @param str
+     * @return
+     */
+    public static String decimal2(Object str) {
+        return format("%.2f", str);
     }
 
-    /**
-     * @param point 位置点
-     * @return 返回位置点名称
-     */
-    public static String getPoint(String point) {
-        if (point.contains(",")) {
-            String[] pointSplit = point.split(",");
-            point = pointSplit[0];
-        }
-        return point;
+
+    public static String decimal1(Object str) {
+        return format("%.1f", str);
     }
 }

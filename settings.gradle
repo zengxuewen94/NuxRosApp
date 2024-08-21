@@ -1,5 +1,3 @@
-rootProject.name = "NuxbotRosControl"
 include ':app'
-include ':module_main'
 include ':lib_common'
-include ':control_common'
+include ':makeRosSDK'

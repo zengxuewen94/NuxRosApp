@@ -39,7 +39,4 @@ public interface AnimAction {
 
     /** 右边弹出动画 */
     int ANIM_RIGHT = R.style.RightAnimStyle;
-
-    /** 底部弹出动画 */
-    int ANIM_BOTTOM_INTO = R.style.BottomIntoAnimStyle;
 }

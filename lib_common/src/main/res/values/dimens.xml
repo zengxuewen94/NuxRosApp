@@ -8,11 +8,11 @@
 
 
     <!-- 字体大小 -->
-    <dimen name="dimen_XL">60dp</dimen>
-    <dimen name="dimen_L">48dp</dimen>
-    <dimen name="dimen_M">36dp</dimen>
-    <dimen name="dimen_S">34dp</dimen>
-    <dimen name="dimen_XS">24dp</dimen>
+    <dimen name="dimen_XL">48dp</dimen>
+    <dimen name="dimen_L">36dp</dimen>
+    <dimen name="dimen_M">30dp</dimen>
+    <dimen name="dimen_S">18dp</dimen>
+    <dimen name="dimen_XS">14dp</dimen>
 
     <dimen name="dialog_ui_round_size">15dp</dimen>
     <integer name="dialog_progress_width_weight">3</integer>

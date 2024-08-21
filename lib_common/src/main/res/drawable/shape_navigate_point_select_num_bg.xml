@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-
-    <solid android:color="@color/tv_navigate_point_select_num_color" />
-    <corners
-        android:radius="180px" />
-</shape>
-

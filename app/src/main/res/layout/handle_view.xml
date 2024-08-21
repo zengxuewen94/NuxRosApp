@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/virtual_joystick_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+  <!-- The black backgroud on which all the other images will be displayed. -->
+  <ImageView
+      android:id="@+id/black_background"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_centerInParent="true"
+      android:src="@drawable/back_05"/>
+
+  <!-- Outer ring representing the maximum magnitude. -->
+  <ImageView
+      android:id="@+id/outer_ring"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_centerInParent="true"
+      android:src="@drawable/grey_ring_notched"/>
+
+  <ImageView
+      android:alpha="0.8"
+      android:id="@+id/center_divet"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/button_04_normal_virgin"/>
+
+  <!-- Thumb divet -->
+  <ImageView
+      android:id="@+id/thumb_divet"
+      android:layout_width="55dp"
+      android:layout_height="55dp"
+      android:antialias="true"
+      android:src="@drawable/btn_yaogan"
+      android:layout_alignTop="@+id/center_divet"
+      android:layout_alignRight="@+id/center_divet"
+      android:layout_alignEnd="@+id/center_divet" />
+
+</RelativeLayout>

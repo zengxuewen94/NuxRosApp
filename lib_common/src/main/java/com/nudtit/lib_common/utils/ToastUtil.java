@@ -1,14 +1,10 @@
 package com.nudtit.lib_common.utils;
 
-import android.app.ActionBar;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +29,7 @@ public class ToastUtil {
      * @param message
      */
     public static void showShort(CharSequence message) {
-        initToast(message, Toast.LENGTH_SHORT);
+        showToast(message, Toast.LENGTH_SHORT);
     }
 
     /**
@@ -42,7 +38,7 @@ public class ToastUtil {
      * @param strResId
      */
     public static void showShort(int strResId) {
-        initToast(Utils.getString(strResId), Toast.LENGTH_SHORT);
+        showToast(Utils.getString(strResId), Toast.LENGTH_SHORT);
     }
 
     /**
@@ -51,7 +47,7 @@ public class ToastUtil {
      * @param message
      */
     public static void showLong(CharSequence message) {
-        initToast(message, Toast.LENGTH_LONG);
+        showToast(message, Toast.LENGTH_LONG);
     }
 
     /**
@@ -60,7 +56,7 @@ public class ToastUtil {
      * @param strResId
      */
     public static void showLong(int strResId) {
-        initToast(Utils.getString(strResId), Toast.LENGTH_LONG);
+        showToast(Utils.getString(strResId), Toast.LENGTH_LONG);
     }
 
     /**
@@ -70,7 +66,7 @@ public class ToastUtil {
      * @param duration
      */
     public static void show(CharSequence message, int duration) {
-        initToast(message, duration);
+        showToast(message, duration);
     }
 
     /**
@@ -80,7 +76,7 @@ public class ToastUtil {
      * @param duration
      */
     public static void show(int strResId, int duration) {
-        initToast(Utils.getString(strResId), duration);
+        showToast(Utils.getString(strResId), duration);
     }
 
 
@@ -90,13 +86,13 @@ public class ToastUtil {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        toast = Toast.makeText(ModuleBaseApplication.getApplication(), message, duration);
+                        toast = Toast.makeText(Utils.getContext(), message, duration);
                         toast.setGravity(Gravity.TOP, 0, getYoffest());
                         toast.show();
                     }
                 });
             } else {
-                toast = Toast.makeText(ModuleBaseApplication.getApplication(), message, duration);
+                toast = Toast.makeText(Utils.getContext(), message, duration);
                 toast.setGravity(Gravity.TOP, 0, getYoffest());
                 toast.show();
             }
@@ -106,14 +102,14 @@ public class ToastUtil {
                     @Override
                     public void run() {
                         toast.cancel();
-                        toast = Toast.makeText(ModuleBaseApplication.getApplication(), message, duration);
+                        toast = Toast.makeText(Utils.getContext(), message, duration);
                         toast.setGravity(Gravity.TOP, 0, getYoffest());
                         toast.show();
                     }
                 });
             } else {
                 toast.cancel();
-                toast = Toast.makeText(ModuleBaseApplication.getApplication(), message, duration);
+                toast = Toast.makeText(Utils.getContext(), message, duration);
                 toast.setGravity(Gravity.TOP, 0, getYoffest());
                 toast.show();
             }
@@ -127,26 +123,22 @@ public class ToastUtil {
      * @return
      */
     public static void showToast(CharSequence message, int duration) {
-        View view = LayoutInflater.from(ModuleBaseApplication.getApplication()).inflate(R.layout.toast_custom, null);
-        TextView tv = (TextView) view.findViewById(R.id.toast_custom_tv);
-        tv.setText(message);
+
         if (toast == null) {
             if (Looper.myLooper() != Looper.getMainLooper()) {//判断当前是否在UI主线程
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        toast = new Toast(ModuleBaseApplication.getApplication());
-                        toast.setGravity(Gravity.TOP, 0, getYoffest());
-                        toast.setView(view);
-                        toast.setDuration(duration);
+                        toast = Toast.makeText(Utils.getContext(),message,duration);
+                        toast.setGravity(Gravity.BOTTOM, 0, getYoffest());
                         toast.show();
                     }
                 });
             } else {
-                toast = new Toast(ModuleBaseApplication.getApplication());
-                toast.setGravity(Gravity.TOP, 0, getYoffest());
-                toast.setView(view);
-                toast.setDuration(duration);
+                toast = Toast.makeText(Utils.getContext(),message,duration);
+                toast.setGravity(Gravity.BOTTOM, 0, getYoffest());
+
+
                 toast.show();
             }
         } else {
@@ -155,27 +147,34 @@ public class ToastUtil {
                     @Override
                     public void run() {
                         toast.cancel();
-                        toast = new Toast(ModuleBaseApplication.getApplication());
-                        toast.setGravity(Gravity.TOP, 0, getYoffest());
-                        toast.setView(view);
-                        toast.setDuration(duration);
+                        toast = Toast.makeText(Utils.getContext(),message,duration);
+                        toast.setGravity(Gravity.BOTTOM, 0, getYoffest());
+
+
                         toast.show();
                     }
                 });
             } else {
                 toast.cancel();
-                toast = new Toast(ModuleBaseApplication.getApplication());
-                toast.setGravity(Gravity.TOP, 0, getYoffest());
-                toast.setView(view);
-                toast.setDuration(duration);
+                toast = Toast.makeText(Utils.getContext(),message,duration);
+                toast.setGravity(Gravity.BOTTOM, 0, getYoffest());
+
                 toast.show();
             }
         }
     }
 
+
     private static int getYoffest() {
-        return (int) ((DisplayUtils.getScreenHeightPixels(ModuleBaseApplication.getApplication()) / 5.4));
+        return (int) ((DisplayUtils.getScreenHeightPixels(Utils.getContext()) / 5.4));
 
     }
+    private static int getYoffestAIUI() {
+        return (int) ((DisplayUtils.getScreenHeightPixels(Utils.getContext()) / 3));
+
+    }
+
+
+
 
 }

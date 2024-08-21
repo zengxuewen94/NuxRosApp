@@ -1,6 +1,7 @@
 package com.nudtit.lib_common.utils;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * @author :  zengxuewen
@@ -35,5 +36,14 @@ public class ListUtils {
             list.addAll(asArrayList(ts));
         }
         return list;
+    }
+
+
+    public static boolean isEmpty(Collection coll) {
+        return coll == null || coll.size() == 0;
+    }
+
+    public static boolean isNotEmpty(Collection coll) {
+        return !isEmpty(coll);
     }
 }
