@@ -1,18 +1,6 @@
 [
     {
-        "merged": "E:\\source code\\WebBot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_check.xml",
-        "source": "E:\\source code\\WebBot\\app\\src\\main\\res\\layout\\activity_check.xml"
-    },
-    {
-        "merged": "E:\\source code\\WebBot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
-        "source": "E:\\source code\\WebBot\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "E:\\source code\\WebBot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_connect.xml",
-        "source": "E:\\source code\\WebBot\\app\\src\\main\\res\\layout\\activity_connect.xml"
-    },
-    {
-        "merged": "E:\\source code\\WebBot\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "E:\\source code\\WebBot\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Android\\SourceCode\\NuxRosApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_connect.xml",
+        "source": "D:\\Android\\SourceCode\\NuxRosApp\\app\\src\\main\\res\\layout\\activity_connect.xml"
     }
 ]

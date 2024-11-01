@@ -4,167 +4,28 @@ package com.eaibot.running.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.eaibot.running.R;
-import com.eaibot.running.view.BatteryView;
-import com.eaibot.running.view.WebHandleView;
-import com.eaibot.running.viewmodel.ConnectViewModel;
-import com.eaibot.running.widget.RoundMenuView;
-import com.nudtit.slam.mapview.MapView;
-import com.zhy.android.percent.support.PercentLinearLayout;
-import com.zhy.android.percent.support.PercentRelativeLayout;
+import com.zhh.rosApp.viewmodel.ConnectViewModel;
+import com.zhh.slam.mapview.MapView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityConnectBinding extends ViewDataBinding {
   @NonNull
-  public final BatteryView battery;
-
-  @NonNull
-  public final Button btnConnect;
-
-  @NonNull
-  public final Button btnToolbox;
-
-  @NonNull
-  public final CheckBox cbCheck;
-
-  @NonNull
-  public final CheckBox cbGmapping;
-
-  @NonNull
-  public final CheckBox cbGoogle;
-
-  @NonNull
-  public final CheckBox cbImu;
-
-  @NonNull
-  public final CheckBox cbNavigation;
-
-  @NonNull
-  public final CheckBox cbRecharge;
-
-  @NonNull
-  public final PercentLinearLayout connectLinearLayout;
-
-  @NonNull
-  public final View cutLine;
-
-  @NonNull
-  public final TextView downloadMap;
-
-  @NonNull
-  public final EditText editTextIp;
-
-  @NonNull
-  public final Button fixedAngular;
-
-  @NonNull
-  public final Button fixedLinear;
-
-  @NonNull
-  public final Button fixedStop;
-
-  @NonNull
-  public final WebHandleView handleViewConnect;
-
-  @NonNull
   public final MapView ivMap;
-
-  @NonNull
-  public final TextView loadMap;
-
-  @NonNull
-  public final Button navContinue;
-
-  @NonNull
-  public final Button navStop;
-
-  @NonNull
-  public final TextView rosServiceIp;
-
-  @NonNull
-  public final ImageView rosStatusConnect;
-
-  @NonNull
-  public final RoundMenuView roundMenuView;
-
-  @NonNull
-  public final PercentRelativeLayout settingLayout;
-
-  @NonNull
-  public final Spinner spinnerMap;
-
-  @NonNull
-  public final TextView titleName;
-
-  @NonNull
-  public final TextView uploadMap;
-
-  @NonNull
-  public final TextView versionName;
-
-  @NonNull
-  public final TextView voltageText;
-
-  @NonNull
-  public final ImageView wifiState;
 
   @Bindable
   protected ConnectViewModel mConnectViewModel;
 
   protected ActivityConnectBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      BatteryView battery, Button btnConnect, Button btnToolbox, CheckBox cbCheck,
-      CheckBox cbGmapping, CheckBox cbGoogle, CheckBox cbImu, CheckBox cbNavigation,
-      CheckBox cbRecharge, PercentLinearLayout connectLinearLayout, View cutLine,
-      TextView downloadMap, EditText editTextIp, Button fixedAngular, Button fixedLinear,
-      Button fixedStop, WebHandleView handleViewConnect, MapView ivMap, TextView loadMap,
-      Button navContinue, Button navStop, TextView rosServiceIp, ImageView rosStatusConnect,
-      RoundMenuView roundMenuView, PercentRelativeLayout settingLayout, Spinner spinnerMap,
-      TextView titleName, TextView uploadMap, TextView versionName, TextView voltageText,
-      ImageView wifiState) {
+      MapView ivMap) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.battery = battery;
-    this.btnConnect = btnConnect;
-    this.btnToolbox = btnToolbox;
-    this.cbCheck = cbCheck;
-    this.cbGmapping = cbGmapping;
-    this.cbGoogle = cbGoogle;
-    this.cbImu = cbImu;
-    this.cbNavigation = cbNavigation;
-    this.cbRecharge = cbRecharge;
-    this.connectLinearLayout = connectLinearLayout;
-    this.cutLine = cutLine;
-    this.downloadMap = downloadMap;
-    this.editTextIp = editTextIp;
-    this.fixedAngular = fixedAngular;
-    this.fixedLinear = fixedLinear;
-    this.fixedStop = fixedStop;
-    this.handleViewConnect = handleViewConnect;
     this.ivMap = ivMap;
-    this.loadMap = loadMap;
-    this.navContinue = navContinue;
-    this.navStop = navStop;
-    this.rosServiceIp = rosServiceIp;
-    this.rosStatusConnect = rosStatusConnect;
-    this.roundMenuView = roundMenuView;
-    this.settingLayout = settingLayout;
-    this.spinnerMap = spinnerMap;
-    this.titleName = titleName;
-    this.uploadMap = uploadMap;
-    this.versionName = versionName;
-    this.voltageText = voltageText;
-    this.wifiState = wifiState;
   }
 
   public abstract void setConnectViewModel(@Nullable ConnectViewModel connectViewModel);

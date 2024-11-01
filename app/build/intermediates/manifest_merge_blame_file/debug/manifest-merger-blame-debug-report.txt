@@ -1,358 +1,203 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.nudtit.gkitr"
+3    package="com.zhh.rosApp"
 4    android:versionCode="5"
 5    android:versionName="1.0.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="28"
-8-->E:\source code\WebBot\app\src\main\AndroidManifest.xml
+8-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->E:\source code\WebBot\app\src\main\AndroidManifest.xml
+9-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-11-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:6:5-78
-11-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:6:22-76
+11-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:6:5-78
+11-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:6:22-76
 12    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-12-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:7:5-75
-12-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:7:22-73
+12-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:7:5-75
+12-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:7:22-73
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:8:5-78
-13-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:8:22-76
+13-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:8:5-78
+13-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:8:22-76
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-14-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:9:5-75
-14-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:9:22-73
+14-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:9:5-75
+14-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:9:22-73
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:10:5-66
-15-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:10:22-64
+15-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:10:5-66
+15-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:10:22-64
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:11:5-68
-16-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:11:22-65
+16-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:11:5-68
+16-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:11:22-65
 17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:13:5-81
-17-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:13:22-78
+17-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:13:5-81
+17-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:13:22-78
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:14:5-80
-18-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:14:22-77
+18-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:14:5-80
+18-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:14:22-77
 19    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-19-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:15:5-16:47
-19-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:15:22-81
+19-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:15:5-16:47
+19-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:15:22-81
 20    <!-- 存储权限 -->
 21    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-21-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:18:5-19:40
-21-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:18:22-79
+21-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:18:5-19:40
+21-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:18:22-79
 22    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-22-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:20:5-82
-22-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:20:22-80
+22-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:20:5-82
+22-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:20:22-80
 23    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-23-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:21:5-81
-23-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:21:22-78
+23-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:21:5-81
+23-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:21:22-78
 24    <!-- 悬浮窗权限 -->
 25    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-25-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:23:5-78
-25-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:23:22-75
+25-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:23:5-78
+25-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:23:22-75
 26    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
-26-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:24:5-80
-26-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:24:22-77
+26-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:24:5-80
+26-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:24:22-77
 27    <!-- 得到屏幕正常的物理尺寸 -->
 28    <supports-screens
-28-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:96:5-101:39
+28-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:72:5-77:39
 29        android:anyDensity="true"
-29-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:97:9-34
+29-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:73:9-34
 30        android:largeScreens="true"
-30-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:98:9-36
+30-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:74:9-36
 31        android:normalScreens="true"
-31-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:99:9-37
+31-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:75:9-37
 32        android:resizeable="true"
-32-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:100:9-34
+32-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:76:9-34
 33        android:smallScreens="true" />
-33-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:101:9-36
-34    <!-- 系统设置权限 -->
-35    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 录音权限 -->
-35-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-19:47
-35-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-57
-36    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-36-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:5-80
-36-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:22-77
-37    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 相机相关权限 -->
-37-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:5-71
-37-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:22-68
-38    <uses-feature android:name="android.hardware.camera" />
-38-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:5-60
-38-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:19-57
-39    <uses-feature android:name="android.hardware.camera.autofocus" />
-39-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:5-70
-39-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:19-67
-40    <uses-feature android:name="android.hardware.camera2.full" />
-40-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:5-66
-40-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:19-63
-41
-42    <uses-permission android:name="android.permission.CAMERA" /> <!-- 蓝牙相关权限 -->
-42-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:5-65
-42-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:22-62
-43    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 获取手机状态权限 -->
-43-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:5-68
-43-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:22-65
-44    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 改变WiFi多播状态权限 -->
-44-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:5-75
-44-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:22-72
-45    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- 允许访问闪光灯权限 -->
-45-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:5-86
-45-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:22-83
-46    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 允许设备振动权限 -->
-46-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:5-69
-46-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:22-66
-47    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 读取联系人权限 -->
-47-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:60:5-66
-47-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:60:22-63
-48    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- usb权限 -->
-48-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:63:5-72
-48-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:63:22-69
-49    <uses-permission android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" /> <!-- 免打扰权限 -->
-49-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:69:5-87
-49-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:69:22-84
-50    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" /> <!-- 安装应用 -->
-50-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:72:5-85
-50-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:72:22-82
-51    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES=" /> <!-- 位置权限 -->
-51-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:74:5-84
-51-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:74:22-81
-52    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-52-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:76:5-79
-52-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:76:22-76
-53    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-53-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:77:5-81
-53-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:77:22-78
-54    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-54-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:78:5-85
-54-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:78:22-82
-55    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 允许发送短信（必须） -->
-55-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:79:5-84
-55-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:79:22-81
-56    <uses-permission android:name="android.permission.SEND_SMS" />
-56-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:81:5-67
-56-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:81:22-64
-57    <uses-permission
-57-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:82:5-84:36
-58        android:name="android.hardware.usb.host"
-58-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:83:9-49
-59        android:required="false" /> <!-- 手机必须支持USB主机特性(OTG) -->
-59-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:84:9-33
-60    <uses-feature
-60-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:86:5-88:35
-61        android:name="android.hardware.usb.host"
-61-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:87:9-49
-62        android:required="true" />
-62-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:88:9-32
-63
-64    <uses-permission android:name="android.permission.REORDER_TASKS" />
-64-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:24:5-72
-64-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:24:22-69
-65
-66    <application
-66-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:25:5-94:19
-67        android:name="com.eaibot.running.base.BaseApplication"
-67-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:30:9-45
-68        android:allowBackup="true"
-68-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:27:9-35
-69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-69-->[androidx.core:core:1.5.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\03ea8e0c65bc25e054628fed822c2877\core-1.5.0\AndroidManifest.xml:24:18-86
-70        android:debuggable="true"
-71        android:extractNativeLibs="false"
-72        android:icon="@mipmap/icon_desktop"
-72-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:28:9-44
-73        android:label="@string/app_name"
-73-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:29:9-41
-74        android:requestLegacyExternalStorage="true"
-74-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:32:9-52
-75        android:supportsRtl="true"
-75-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:31:9-35
-76        android:testOnly="true"
-77        android:theme="@style/AppTheme" >
-77-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:33:9-40
-78        <provider
-79            android:name="androidx.core.content.FileProvider"
-79-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:35:13-62
-80            android:authorities="com.nudtit.gkitr.fileProvider"
-80-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:36:13-64
-81            android:exported="false"
-81-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:37:13-37
-82            android:grantUriPermissions="true" >
-82-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:38:13-47
-83            <meta-data
-83-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:39:13-41:54
-84                android:name="android.support.FILE_PROVIDER_PATHS"
-84-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:40:17-67
-85                android:resource="@xml/file_paths" />
-85-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:41:17-51
-86        </provider>
-87
-88        <activity
-88-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:43:9-54:20
-89            android:name="com.eaibot.running.activity.ConnectActivity"
-89-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:43:19-77
-90            android:configChanges="keyboardHidden|orientation|screenSize"
-90-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:44:13-74
-91            android:launchMode="singleTask"
-91-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:45:13-44
-92            android:screenOrientation="landscape"
-92-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:47:13-50
-93            android:theme="@style/SplashTheme" >
-93-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:46:13-47
+33-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:77:9-36
+34
+35    <uses-permission android:name="android.permission.REORDER_TASKS" />
+35-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:24:5-72
+35-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:24:22-69
+36
+37    <application
+37-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:25:5-70:19
+38        android:name="com.eaibot.running.base.BaseApplication"
+38-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:30:9-45
+39        android:allowBackup="true"
+39-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:27:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.5.0] C:\Users\18874923\.gradle\caches\transforms-3\3d147ef03b3f35a57ce80ac72bbcdde2\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:label="@string/app_name"
+43-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:29:9-41
+44        android:requestLegacyExternalStorage="true"
+44-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:32:9-52
+45        android:supportsRtl="true"
+45-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:31:9-35
+46        android:testOnly="true" >
+47        <provider
+48            android:name="androidx.core.content.FileProvider"
+48-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:34:13-62
+49            android:authorities="com.zhh.rosApp.fileProvider"
+49-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:35:13-64
+50            android:exported="false"
+50-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:36:13-37
+51            android:grantUriPermissions="true" >
+51-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:37:13-47
+52            <meta-data
+52-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:38:13-40:54
+53                android:name="android.support.FILE_PROVIDER_PATHS"
+53-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:39:17-67
+54                android:resource="@xml/file_paths" />
+54-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:40:17-51
+55        </provider>
+56
+57        <activity
+57-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:42:9-52:20
+58            android:name="com.eaibot.running.activity.ConnectActivity"
+58-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:42:19-77
+59            android:configChanges="keyboardHidden|orientation|screenSize"
+59-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:43:13-74
+60            android:launchMode="singleTask"
+60-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:44:13-44
+61            android:screenOrientation="landscape" >
+61-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:45:13-50
+62            <intent-filter>
+62-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:46:13-51:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:17-69
+63-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:48:17-77
+65-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:48:27-74
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:49:17-76
+66-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:49:27-73
+67                <category android:name="android.intent.category.HOME" />
+67-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:50:17-73
+67-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:50:27-70
+68            </intent-filter>
+69        </activity>
+70
+71        <meta-data
+71-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:56:9-58:35
+72            android:name="android.max_aspect"
+72-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:57:13-46
+73            android:value="2.1" />
+73-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:58:13-32
+74        <meta-data
+74-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:60:13-62:40
+75            android:name="ScopedStorage"
+75-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:61:17-45
+76            android:value="true" />
+76-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:62:17-37
+77        <meta-data
+77-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:63:9-65:35
+78            android:name="design_width_in_dp"
+78-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:64:13-46
+79            android:value="800" />
+79-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:65:13-32
+80        <meta-data
+80-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:66:9-68:35
+81            android:name="design_height_in_dp"
+81-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:67:13-47
+82            android:value="680" />
+82-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:68:13-32
+83
+84        <activity
+84-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:27:9-33:20
+85            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+85-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:28:13-99
+86            android:theme="@android:style/Theme" >
+86-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:29:13-49
+87            <intent-filter>
+87-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:17-69
+88-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:25-66
+89            </intent-filter>
+90        </activity>
+91        <activity
+91-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:34:9-40:20
+92            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+92-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:35:13-95
+93            android:theme="@android:style/Theme" >
+93-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:36:13-49
 94            <intent-filter>
-94-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:48:13-53:29
+94-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
 95                <action android:name="android.intent.action.MAIN" />
-95-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:17-69
-95-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:25-66
-96
-97                <category android:name="android.intent.category.LAUNCHER" />
-97-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:50:17-77
-97-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:50:27-74
-98                <category android:name="android.intent.category.DEFAULT" />
-98-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:51:17-76
-98-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:51:27-73
-99                <category android:name="android.intent.category.HOME" />
-99-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:52:17-73
-99-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:52:27-70
-100            </intent-filter>
-101        </activity>
-102
-103        <!-- <activity android:name=".activity.ConnectActivity" -->
-104        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
-105        <!-- android:screenOrientation="landscape" /> -->
+95-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:17-69
+95-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:25-66
+96            </intent-filter>
+97        </activity>
+98        <activity
+98-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:41:9-47:20
+99            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+99-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:42:13-103
+100            android:theme="@android:style/Theme.Dialog" >
+100-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:43:13-56
+101            <intent-filter>
+101-->[androidx.test:core:1.3.0] C:\Users\18874923\.gradle\caches\transforms-3\23686029adad9b0208fc67f02c078e3c\transformed\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
+102                <action android:name="android.intent.action.MAIN" />
+102-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:17-69
+102-->D:\Android\SourceCode\NuxRosApp\app\src\main\AndroidManifest.xml:47:25-66
+103            </intent-filter>
+104        </activity>
+105    </application>
 106
-107        <activity
-107-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:60:9-63:20
-108            android:name="com.eaibot.running.activity.MainActivity"
-108-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:60:19-56
-109            android:configChanges="keyboardHidden|orientation|screenSize"
-109-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:61:13-74
-110            android:screenOrientation="landscape" >
-110-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:62:13-50
-111        </activity>
-112        <activity
-112-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:65:9-67:52
-113            android:name="com.eaibot.running.activity.CheckActivity"
-113-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:65:19-57
-114            android:configChanges="keyboardHidden|orientation|screenSize"
-114-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:66:13-74
-115            android:screenOrientation="landscape" />
-115-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:67:13-50
-116
-117        <service android:name="com.eaibot.running.service.RosService" >
-117-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:69:9-73:19
-117-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:69:18-70
-118            <intent-filter>
-118-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:70:13-72:29
-119                <action android:name="com.eaibot.running.service.RosService" />
-119-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:71:17-80
-119-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:71:25-77
-120            </intent-filter>
-121        </service>
-122        <service android:name="com.eaibot.running.service.MainService" >
-122-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:75:9-79:19
-122-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:75:18-71
-123            <intent-filter>
-123-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:76:13-78:29
-124                <action android:name="com.eaibot.running.service.MainService" />
-124-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:77:17-81
-124-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:77:25-78
-125            </intent-filter>
-126        </service>
-127
-128        <meta-data
-128-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:80:9-82:35
-129            android:name="android.max_aspect"
-129-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:81:13-46
-130            android:value="2.1" />
-130-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:82:13-32
-131        <meta-data
-131-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:84:13-86:40
-132            android:name="ScopedStorage"
-132-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:85:17-45
-133            android:value="true" />
-133-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:86:17-37
-134        <meta-data
-134-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:87:9-89:35
-135            android:name="design_width_in_dp"
-135-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:88:13-46
-136            android:value="800" />
-136-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:89:13-32
-137        <meta-data
-137-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:90:9-92:35
-138            android:name="design_height_in_dp"
-138-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:91:13-47
-139            android:value="680" />
-139-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:92:13-32
-140
-141        <service android:name="org.eclipse.paho.android.service.MqttService" />
-141-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:91:9-80
-141-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:91:18-77
-142        <service android:name="com.nudtit.lib_common.mqtt.service.MqttService" />
-142-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:9-82
-142-->[:lib_common] E:\source code\WebBot\lib_common\build\intermediates\merged_manifest\debug\AndroidManifest.xml:92:18-79
-143
-144        <provider
-144-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d979370bf53ce53043c784c67d6c0cd2\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-145            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-145-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d979370bf53ce53043c784c67d6c0cd2\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-146            android:authorities="com.nudtit.gkitr.lifecycle-process"
-146-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d979370bf53ce53043c784c67d6c0cd2\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-147            android:exported="false"
-147-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d979370bf53ce53043c784c67d6c0cd2\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-148            android:multiprocess="true" />
-148-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d979370bf53ce53043c784c67d6c0cd2\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-149
-150        <activity
-150-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:27:9-33:20
-151            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-151-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:28:13-99
-152            android:theme="@android:style/Theme" >
-152-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:29:13-49
-153            <intent-filter>
-153-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
-154                <action android:name="android.intent.action.MAIN" />
-154-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:17-69
-154-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:25-66
-155            </intent-filter>
-156        </activity>
-157        <activity
-157-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:34:9-40:20
-158            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-158-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:35:13-95
-159            android:theme="@android:style/Theme" >
-159-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:36:13-49
-160            <intent-filter>
-160-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
-161                <action android:name="android.intent.action.MAIN" />
-161-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:17-69
-161-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:25-66
-162            </intent-filter>
-163        </activity>
-164        <activity
-164-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:41:9-47:20
-165            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-165-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:42:13-103
-166            android:theme="@android:style/Theme.Dialog" >
-166-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:43:13-56
-167            <intent-filter>
-167-->[androidx.test:core:1.3.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1052b6046bd68db9189dfdad7acfe63e\jetified-core-1.3.0\AndroidManifest.xml:30:13-32:29
-168                <action android:name="android.intent.action.MAIN" />
-168-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:17-69
-168-->E:\source code\WebBot\app\src\main\AndroidManifest.xml:49:25-66
-169            </intent-filter>
-170        </activity>
-171
-172        <provider
-172-->[com.github.JessYanCoding:AndroidAutoSize:v1.2.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b83c65e74e27e63b06630e86e39789b4\jetified-AndroidAutoSize-v1.2.1\AndroidManifest.xml:12:9-16:43
-173            android:name="me.jessyan.autosize.InitProvider"
-173-->[com.github.JessYanCoding:AndroidAutoSize:v1.2.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b83c65e74e27e63b06630e86e39789b4\jetified-AndroidAutoSize-v1.2.1\AndroidManifest.xml:13:13-60
-174            android:authorities="com.nudtit.gkitr.autosize-init-provider"
-174-->[com.github.JessYanCoding:AndroidAutoSize:v1.2.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b83c65e74e27e63b06630e86e39789b4\jetified-AndroidAutoSize-v1.2.1\AndroidManifest.xml:14:13-74
-175            android:exported="false"
-175-->[com.github.JessYanCoding:AndroidAutoSize:v1.2.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b83c65e74e27e63b06630e86e39789b4\jetified-AndroidAutoSize-v1.2.1\AndroidManifest.xml:15:13-37
-176            android:multiprocess="true" />
-176-->[com.github.JessYanCoding:AndroidAutoSize:v1.2.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b83c65e74e27e63b06630e86e39789b4\jetified-AndroidAutoSize-v1.2.1\AndroidManifest.xml:16:13-40
-177    </application>
-178
-179</manifest>
+107</manifest>
