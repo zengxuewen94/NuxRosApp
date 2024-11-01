@@ -26,7 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    //Terminal 执行gradlew makeJar
+    //gradle -version
     task makeJar( type: Jar) {
         classifier = 'sources'
         from android.sourceSets.main.java.srcDirs

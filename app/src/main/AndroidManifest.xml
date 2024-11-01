@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.eaibot.running">
-
+    package="com.zhh.rosApp">
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -25,10 +24,9 @@
     <application
 
         android:allowBackup="true"
-
         android:label="@string/app_name"
-        android:name=".base.BaseApplication"
         android:supportsRtl="true"
+        android:theme="@style/AppTheme"
         android:requestLegacyExternalStorage="true">
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -39,7 +37,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-        <activity android:name="com.eaibot.running.activity.ConnectActivity"
+        <activity android:name="com.zhh.rosApp.activity.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="landscape">

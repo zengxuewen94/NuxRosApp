@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhh.rosApp"
-    android:versionCode="5"
+    android:versionCode="1"
     android:versionName="1.0.1" >
 
     <uses-sdk
@@ -35,7 +35,6 @@
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 
     <application
-        android:name="com.eaibot.running.base.BaseApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -43,7 +42,8 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:testOnly="true" >
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.zhh.rosApp.fileProvider"
@@ -55,7 +55,7 @@
         </provider>
 
         <activity
-            android:name="com.eaibot.running.activity.ConnectActivity"
+            android:name="com.zhh.rosApp.activity.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="landscape" >

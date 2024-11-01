@@ -8,7 +8,7 @@
         "source": "D:\\Android\\SourceCode\\NuxRosApp\\app\\src\\main\\res\\xml\\network_security_config.xml"
     },
     {
-        "merged": "D:\\Android\\SourceCode\\NuxRosApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_connect.xml.flat",
-        "source": "D:\\Android\\SourceCode\\NuxRosApp\\app\\src\\main\\res\\layout\\activity_connect.xml"
+        "merged": "D:\\Android\\SourceCode\\NuxRosApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_m.xml.flat",
+        "source": "D:\\Android\\SourceCode\\NuxRosApp\\app\\src\\main\\res\\layout\\activity_m.xml"
     }
 ]

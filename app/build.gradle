@@ -12,7 +12,8 @@ android {
         applicationId "com.zhh.rosApp"
         minSdkVersion 28
         targetSdkVersion 30
-        versionCode 5
+        versionCode 1
+
         versionName "1.0.1"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

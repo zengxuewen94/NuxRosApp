@@ -1,17 +1,18 @@
-com/eaibot/running/DataBindingTriggerClass.java
- com.eaibot.running.DataBindingTriggerClass
-com/zhh/rosApp/manger/RosDeviceManager.java
- com.zhh.rosApp.manger.RosDeviceManager
-com/eaibot/running/BuildConfig.java
- com.eaibot.running.BuildConfig
-com/zhh/rosApp/viewmodel/ConnectViewModel.java
- com.zhh.rosApp.viewmodel.ConnectViewModel
- com.zhh.rosApp.viewmodel.ConnectViewModel$1
- com.zhh.rosApp.viewmodel.ConnectViewModel$2
-com/zhh/rosApp/activity/ConnectActivity.java
- com.zhh.rosApp.activity.ConnectActivity
- com.zhh.rosApp.activity.ConnectActivity$1
+com/zhh/rosApp/BuildConfig.java
+ com.zhh.rosApp.BuildConfig
+com/zhh/rosApp/databinding/ActivityMBinding.java
+ com.zhh.rosApp.databinding.ActivityMBinding
+com/zhh/rosApp/DataBindingTriggerClass.java
+ com.zhh.rosApp.DataBindingTriggerClass
 com/zhh/rosApp/base/BaseApplication.java
  com.zhh.rosApp.base.BaseApplication
-com/eaibot/running/databinding/ActivityConnectBinding.java
- com.eaibot.running.databinding.ActivityConnectBinding
+com/zhh/rosApp/manger/RosDeviceManager.java
+ com.zhh.rosApp.manger.RosDeviceManager
+ com.zhh.rosApp.manger.RosDeviceManager$1
+com/zhh/rosApp/activity/MainActivity.java
+ com.zhh.rosApp.activity.MainActivity
+ com.zhh.rosApp.activity.MainActivity$1
+com/zhh/rosApp/viewmodel/MainViewModel.java
+ com.zhh.rosApp.viewmodel.MainViewModel
+ com.zhh.rosApp.viewmodel.MainViewModel$1
+ com.zhh.rosApp.viewmodel.MainViewModel$2

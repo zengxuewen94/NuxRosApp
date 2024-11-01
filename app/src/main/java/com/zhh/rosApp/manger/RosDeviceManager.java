@@ -2,8 +2,10 @@ package com.zhh.rosApp.manger;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.zhh.androidrosbridgeclient.RosBridgeClientManager;
+import com.zhh.androidrosbridgeclient.ros.ROSClient;
 import com.zhh.androidrosbridgeclient.ros.message.geometry_msgs.Pose;
 import com.zhh.androidrosbridgeclient.ros.message.geometry_msgs.PoseStamped;
 import com.zhh.androidrosbridgeclient.ros.message.geometry_msgs.Quaternion;
@@ -15,7 +17,6 @@ import com.zhh.slam.bean.Path;
 import com.zhh.slam.bean.Rotation;
 
 import java.util.Vector;
-
 
 
 public enum RosDeviceManager {
@@ -38,7 +39,7 @@ public enum RosDeviceManager {
     public synchronized boolean connect(String uri) {
         this.ip = uri;
         try {
-            return manager.connect(uri, null);
+            return manager.connect(uri, connectionStatusListener);
         } catch (Exception e) {
             onErrorInfo(e);
         }
@@ -90,9 +91,6 @@ public enum RosDeviceManager {
     }
 
 
-
-
-
     /**
      * @return 激光雷达数据
      */
@@ -127,16 +125,12 @@ public enum RosDeviceManager {
     }
 
 
-
-
     /**
      * @return 地图原始数据
      */
     public synchronized OccupancyGrid getMapData() {
         return manager.getMapData();
     }
-
-
 
 
     /**
@@ -169,7 +163,6 @@ public enum RosDeviceManager {
     }
 
 
-
     /**
      * 四元数转为欧拉角
      *
@@ -192,7 +185,6 @@ public enum RosDeviceManager {
     }
 
 
-
     /**
      * 关闭连接
      */
@@ -203,8 +195,23 @@ public enum RosDeviceManager {
             onErrorInfo(e);
         }
 
-
     }
 
+    ROSClient.ConnectionStatusListener connectionStatusListener = new ROSClient.ConnectionStatusListener() {
+        @Override
+        public void onConnect() {
+            Log.d("Ros", "onConnect:连接成功");
+        }
+
+        @Override
+        public void onDisconnect(boolean normal, String reason, int code) {
+            Log.d("Ros", "onDisconnect:连接失败" + reason + code);
+        }
+
+        @Override
+        public void onError(Exception ex) {
+            Log.d("Ros", "onError:连接失败：" + ex.getMessage());
+        }
+    };
 
 }
